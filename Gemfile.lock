@@ -104,6 +104,7 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
+  universal-darwin-21
   x86_64-darwin-20
 
 DEPENDENCIES
@@ -113,4 +114,4 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 BUNDLED WITH
-   2.3.19
+   2.3.22
