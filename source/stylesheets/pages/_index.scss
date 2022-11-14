@@ -1,2 +1,16 @@
 // Import page-specific CSS files here.
 @import "home";
+
+// body {
+
+// }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-style: italic;
+  color: #6f6275;
+}
