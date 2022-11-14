@@ -1,19 +1,19 @@
-- name: Longest Word Game
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
+- name: Pluto
+  description: A mobile first web app to help you manage your pet's happy and healthy life.
+  image: pluto_banner.jpg
+  url: https://www.pluto-pets.me/
 
-- name: Movie Watchlist
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
+- name: Lendstruments
+  description: A marketplace app where can lend instruments to each other.
+  image: lendstruments.jpg
+  url: https://lendstruments.herokuapp.com/
+
+- name: Movie Watchlist - movies-n-chill
+  description: A simple rails app where you can create and manage your movies lists.
+  image: movies-n-chill.png
+  url: https://movies-n-chill.herokuapp.com/
 
 - name: Airbnb
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-
-- name: Final project
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
