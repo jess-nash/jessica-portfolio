@@ -1,9 +1,9 @@
 // Import page-specific CSS files here.
 @import "home";
 
-// body {
-
-// }
+body {
+  font-family: 'Roboto Slab', serif;
+}
 
 a {
   text-decoration: none;
@@ -13,4 +13,24 @@ a {
 a:hover {
   font-style: italic;
   color: #6f6275;
+}
+
+.divider {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  .line {
+    height: 1px;
+    width: 200px;
+    width: 750px;
+    background: black;
+  }
 }

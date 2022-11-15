@@ -1,0 +1,29 @@
+#pluto-img {
+  width: 80%;
+}
+
+#project-title {
+  font-size: 50px;
+}
+
+#project-subtitle {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+
+.tools-used {
+  margin-left: 30px;
+
+  .project-tool-icon {
+    font-size: 50px;
+    color: black;
+    padding: 5px;
+  }
+
+  .project-tool-img {
+    width: 50px;
+    padding: 5px;
+    padding-top: 10px;
+  }
+
+}
