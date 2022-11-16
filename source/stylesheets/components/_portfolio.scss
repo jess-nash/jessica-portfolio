@@ -1,29 +1,87 @@
 #pluto-img {
-  width: 80%;
+  width: 100%;
 }
 
-#project-title {
-  font-size: 50px;
+#lendstruments-img {
+  width: 100%;
 }
 
-#project-subtitle {
-  font-size: 20px;
-  letter-spacing: 0.08em;
+.pluto-left {
+  margin-left: 60px;
 }
 
-.tools-used {
-  margin-left: 30px;
+.pluto-right {
+  max-width: 60%;
+  margin-left: 20px;
+}
 
-  .project-tool-icon {
+  .project-title {
     font-size: 50px;
-    color: black;
-    padding: 5px;
   }
 
-  .project-tool-img {
-    width: 50px;
-    padding: 5px;
-    padding-top: 10px;
+  .project-subtitle {
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    font-style: italic;
   }
 
-}
+  .project-role {
+    margin-left: 30px;
+    padding: 20px 0 10px 0;
+  }
+
+  .project-description {
+    margin-left: 30px;
+    list-style: "> ";
+    font-size: 18px;
+      li {
+        margin-bottom: 10px;
+      }
+  }
+
+  .tools-used {
+    margin-left: 30px;
+
+    .project-tool-icon {
+      font-size: 50px;
+      color: black;
+      padding: 5px;
+    }
+
+    .project-tool-img {
+      width: 50px;
+      padding: 5px;
+      padding-top: 10px;
+    }
+  }
+
+  .lines {
+    display: flex;
+
+    .line-1 {
+      margin-right: 10px;
+      height: 1px;
+      width: 150px;
+      background: black;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .line-2 {
+      margin-right: 10px;
+      height: 1px;
+      width: 75px;
+      background: black;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .line-3 {
+      height: 1px;
+      width: 25px;
+      background: black;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .pluto-buttons {
+
+  }
