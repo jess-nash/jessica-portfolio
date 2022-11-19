@@ -1,0 +1,35 @@
+#technologies {
+  ul {
+    list-style: none;
+  }
+
+  .box {
+    background-color: white;
+    border: 1px solid $light-purple;
+    margin: 15px;
+  }
+
+  .box-header {
+    background-color: $light-purple;
+    padding: 5px;
+  }
+
+  h5 {
+    margin: 0;
+  }
+
+  .short-box {
+    min-width: 278px;
+    height: 114px;
+  }
+
+  .long-box {
+    min-width: 270px;
+    height: 175px;
+  }
+
+  .technology-img {
+    width: 60px;
+    padding: 10px;
+  }
+}
