@@ -1,19 +1,22 @@
-<footer class="row my-1">
+<footer class="row footer">
   <div class="col-12">
-    <div id="contact">
-      <div class="d-flex justify-content-center flex-wrap">
-        <div class="button-social d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-solid fa-envelope"></i>
-          <%= mail_to "jeenash2@gmail.com", "", target: '_blank', class: 'button-social-link' %>
-        </div>
-        <div class="button-social d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-brands fa-github"></i>
-          <%= link_to "", "https://github.com/jess-nash", target: '_blank', class: 'button-social-link' %>
-        </div>
-        <div class="button-social d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-brands fa-linkedin"></i>
-          <%= link_to "", "https://www.linkedin.com/in/jess-nash", target: '_blank', class: 'button-social-link' %>
-        </div>
+    <div id="contact" class="d-flex flex-column justify-content-center align-items-center pb-5">
+        <span>Let's chat!</span>
+        <span>Wanna get in touch or talk about a project?</span>
+        <span>Feel free to contact me via email at <b><%= mail_to "jeenash2@gmail.com", "jeenash2@gmail.com", target: '_blank', class:"email-link"%></em></span>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap">
+      <div class="button-social d-flex flex-column justify-content-center align-items-center">
+        <i class="fa-solid fa-envelope"></i>
+        <%= mail_to "jeenash2@gmail.com", "", target: '_blank', class: 'button-social-link' %>
+      </div>
+      <div class="button-social d-flex flex-column justify-content-center align-items-center">
+        <i class="fa-brands fa-github"></i>
+        <%= link_to "", "https://github.com/jess-nash", target: '_blank', class: 'button-social-link' %>
+      </div>
+      <div class="button-social d-flex flex-column justify-content-center align-items-center">
+        <i class="fa-brands fa-linkedin"></i>
+        <%= link_to "", "https://www.linkedin.com/in/jess-nash", target: '_blank', class: 'button-social-link' %>
       </div>
     </div>
     <div id="copyright" class="d-flex justify-content-center my-2">
