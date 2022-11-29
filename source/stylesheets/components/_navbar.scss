@@ -1,4 +1,8 @@
 .navbar {
   justify-content: space-between;
   background: $light-purple;
+
+  a:hover {
+    color: #6f6275;
+  }
 }
