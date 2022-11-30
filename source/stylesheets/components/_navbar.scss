@@ -1,6 +1,8 @@
-.navbar {
-  justify-content: space-between;
+.navigation {
   background: $light-purple;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   a:hover {
     color: #6f6275;
