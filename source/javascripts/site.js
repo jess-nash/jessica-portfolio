@@ -3,10 +3,18 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};
 
+
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 110) {
-    document.querySelector(".button-social-icon").style.fontSize = "25px";
+  let icons = document.querySelectorAll('.button-social-icon');
+  // let iconContainer = document.getElementById('right-buttons')
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    icons.forEach(icon => {
+      icon.style.fontSize = "30px";
+    })
+    // iconContainer.style.right = "300px"
   } else {
-    document.querySelector(".button-social-icon").style.fontSize = "50px";
+    icons.forEach(icon => {
+      icon.style.fontSize = "50px";
+    })
   }
 }
