@@ -8,17 +8,30 @@
   }
 }
 /** RIGHT SIDE SOCIAL BUTTONS **/
-.right-buttons {
+#right-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
   top: 175px;
-  right: 239px;
+  right: 210px;
+  transition: 400ms;
 }
 
-#not-scrolled-buttons {
+#sticky-right-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  transition: 400ms;
+}
 
+.button-social-icon {
+  font-size: 50px;
+  padding: 10px;
+  transition: 400ms;
 }
 
 .button-social-link {
@@ -27,12 +40,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.button-social-icon {
-  font-size: 50px;
-  padding: 10px;
-  transition: 400ms;
 }
 
 /** WHITE BUTTON **/
