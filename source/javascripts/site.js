@@ -1,10 +1,5 @@
-// This is where it all goes :)
-
 // When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() {scrollFunction()};
-
-
-function scrollFunction() {
+window.onscroll = function() {
   let icons = document.querySelectorAll('.button-social-icon');
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     icons.forEach(icon => {
@@ -28,4 +23,24 @@ function scrollFunction() {
     // rightButtons.style.transition = "400ms"
     document.getElementById('sticky-right-buttons').setAttribute('id', 'right-buttons')
   }
-}
+};
+
+// window.onload  = function(){
+//   // selecting the elements for which we want to add a tooltip
+//   const target = document.querySelector(".tooltip-button");
+//   const tooltip = document.querySelector(".tooltip-text");
+
+//   // change display to 'block' on mouseover
+//   target.addEventListener('mouseover', () => {
+//     tooltip.style.display = 'block';
+//     // tooltip.style.animation = "fadeIn"
+//     // tooltip.style.animationDuration = "0.6s"
+//   }, false);
+
+//   // change display to 'none' on mouseleave
+//   target.addEventListener('mouseleave', () => {
+//     tooltip.style.display = 'none';
+//     // tooltip.style.animation = "fadeOut"
+//     // tooltip.style.animationDuration = "0.6s"
+//   }, false);
+// }
