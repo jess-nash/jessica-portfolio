@@ -11,7 +11,7 @@
 - name: Movie Watchlist - movies-n-chill
   description: A simple rails app where you can create and manage your movies lists.
   image: movies-n-chill.png
-  url: https://movies-n-chill.herokuapp.com/
+  url: https://movies-n-chill.onrender.com
 
 - name: Airbnb
   description: Decent description of the app
