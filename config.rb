@@ -46,3 +46,5 @@ page '/*.txt', layout: false
 # end
 
 activate :metaman, host: 'https://jessnash-portfolio.netlify.app/'
+
+activate :directory_indexes  #Removes .html from file
