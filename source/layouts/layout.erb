@@ -6,7 +6,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Jessica Nash | Web Development" %></title>
+    <%# <title><%= current_page.data.title || "Jessica Nash | Web Development" %></title>
+    <title>Jessica Nash | Web Development</title>
 
       <!-- Primary Meta Tags -->
     <meta name="title" content="Jessica Nash | Fullstack Developer">
@@ -24,6 +25,9 @@
     <%= display_meta_tags %>
   </head>
   <body>
+    <!-- NavBar Section -->
+    <%= partial 'partials/navbar' %>
+
     <%= yield %>
   </body>
 </html>
