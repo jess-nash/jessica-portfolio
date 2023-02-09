@@ -19,3 +19,16 @@ html, body {
 .flex {
   display: flex;
 }
+
+.alert {
+  top: 50px;
+  right: 345px;
+  height: fit-content;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px){
+  .alert {
+    display: none;
+  }
+}

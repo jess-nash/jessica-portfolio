@@ -39,6 +39,10 @@
 
 
 @media only screen and (max-width: 600px) {
+  #about {
+    min-height: 428px;
+  }
+
   #about-text {
     width: 100%;
   }
