@@ -4,7 +4,7 @@
 }
 
 #about-text {
-  width: 40%;
+  max-width: 40%;
   // margin-left: 55px;
 }
 
@@ -20,10 +20,10 @@
 
 #about-subtitle {
   font-size: 40px;
-  width: 380px;
+  max-width: 380px;
 }
 
 #about-description {
   font-size: 20px;
-  width: 455px;
+  max-width: 455px;
 }

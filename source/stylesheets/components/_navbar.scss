@@ -1,17 +1,46 @@
-.navigation {
+.navbar {
   background: $light-purple;
   position: sticky;
   top: 0;
   z-index: 1;
+  width: 100%;
+  justify-content: center;
+
+  .nav-menu {
+    margin: 0 auto;
+  }
+  .nav-link {
+    color: black;
+    margin-bottom: 0;
+  }
 
   a:hover {
     color: #6f6275;
   }
+
+  .music {
+    padding: 5px 15px;
+  }
+
 }
 
-#music-link {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: fit-content;
+@media only screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .music-link {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .music {
+    font-size: 2em;
+  }
 }

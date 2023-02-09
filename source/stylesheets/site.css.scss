@@ -9,3 +9,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+html, body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
