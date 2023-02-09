@@ -1,6 +1,7 @@
 #about {
   font-family: body-font;
   justify-content: center;
+  margin-top: 20px;
 }
 
 #about-text {
@@ -26,4 +27,60 @@
 #about-description {
   font-size: 20px;
   max-width: 455px;
+}
+
+.avatar-container {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #about-text {
+    width: 100%;
+  }
+
+  #about-intro {
+    font-size: 20px;
+    position: relative;
+    left: -61px;
+    top: -2px;
+  }
+
+  #about-title {
+    top: -13px;
+    font-size: 50px;
+    position: relative;
+    left: -81px;
+    min-width: 277px;
+  }
+
+  #about-subtitle {
+    font-size: 30px;
+    min-width: 251px;
+    position: relative;
+    right: 83px;
+    top: 203px;
+  }
+
+  #about-description {
+    font-size: 15px;
+    min-width: 252px;
+    position: relative;
+    top: 203px;
+    left: -72px;
+  }
+
+  .avatar-container {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
 }

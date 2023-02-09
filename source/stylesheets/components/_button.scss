@@ -63,3 +63,16 @@
   margin-left: 30px;
   font-size: 12px;
 }
+
+@media only screen and (max-width: 600px) {
+  #right-buttons {
+    display: none;
+    // position: absolute;
+    // top: 183px;
+    // right: -4px;
+  }
+
+  .button-social-icon {
+    font-size: 20px;
+  }
+}
