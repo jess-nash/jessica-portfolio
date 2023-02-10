@@ -1,18 +1,30 @@
-<nav class="navbar">
-  <div class="nav-menu">
-    <a href="#about"><h4 class="nav-link hvr-grow">About</h4></a>
-    <a href="#works"><h4 class="nav-link hvr-grow">Works</h4></a>
-    <a href="#resume"><h4 class="nav-link hvr-grow">Resume</h4></a>
-    <a href="#contact"><h4 class="nav-link hvr-grow">Contact</h4></a>
-  </div>
-  <div class="music">
-    <% if current_page.data.title == "index" %>
-      <a href="music" class="music-link hvr-grow">🎙️</a>
-    <% elsif current_page.data.title == "music" %>
-      <% link_to '/', class:"music-link hvr-grow" do %>
-        👩‍💻
+  <nav>
+    <div class="navbar">
+      <div class="nav-menu">
+        <a href="#home"><h4 class="nav-link hvr-grow">Home</h4></a>
+        <a href="#portfolio"><h4 class="nav-link hvr-grow">Portfolio</h4></a>
+        <a href="#tech"><h4 class="nav-link hvr-grow">Tech</h4></a>
+        <a href="#resume"><h4 class="nav-link hvr-grow">Resume</h4></a>
+        <a href="#contact"><h4 class="nav-link hvr-grow">Contact</h4></a>
+      </div>
+    </div>
+    <div class="music">
+      <% if current_page.data.title == "index" %>
+        <a href="music" class="music-link hvr-grow">🎙️</a>
+      <% elsif current_page.data.title == "music" %>
+        <% link_to '/', class:"music-link hvr-grow" do %>
+          👩‍💻
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
+    </div>
 
-</nav>
+    <div class="navbar-mobile">
+      <div class="nav-menu">
+        <a href="#home"><i class="fas fa-house nav-link hvr-grow"></i></a>
+        <a href="#portfolio"><i class="fas fa-folder-open nav-link hvr-grow"></i></a>
+        <a href="#tech"><i class="fas fa-code nav-link hvr-grow"></i></a>
+        <a href="#resume"><i class="fas fa-file-lines nav-link hvr-grow"></i></a>
+        <a href="#contact"><i class="fas fa-code nav-link hvr-grow"></i></a>
+      </div>
+    </div>
+  </nav>

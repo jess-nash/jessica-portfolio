@@ -1,10 +1,17 @@
-.navbar {
-  background: $light-purple;
+nav {
   position: sticky;
   top: 0;
   z-index: 1;
-  width: 100%;
-  justify-content: center;
+}
+
+  .navbar {
+    background: $light-purple;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0.7rem 1.7rem;
+  }
 
   .nav-menu {
     margin: 0 auto;
@@ -12,6 +19,7 @@
   .nav-link {
     color: black;
     margin-bottom: 0;
+    font-size: 1.5rem;
   }
 
   a:hover {
@@ -19,28 +27,36 @@
   }
 
   .music {
-    padding: 5px 15px;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+    top: 10px;
   }
 
-}
+  .navbar-mobile {
+    display: none;
+  }
 
 @media only screen and (max-width: 600px) {
+  .navbar-mobile {
+    background: $light-purple;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0.7rem 1.7rem;
+    transition: all .4s ease;
+    width: 100%;
+  }
+
+  .navbar-mobile i {
+    font-size: .9rem;
+  }
+
   .navbar {
-    justify-content: space-around;
+    display: none;
   }
 
-  .nav-link {
-    font-size: 12px;
-    padding: 12px;
-  }
-
-  .music-link {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (min-width: 768px) {
   .music {
-    font-size: 2em;
+    display: none;
   }
 }
