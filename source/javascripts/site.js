@@ -3,7 +3,7 @@ window.onscroll = function() {
   let icons = document.querySelectorAll('.button-social-icon');
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     icons.forEach(icon => {
-      icon.style.fontSize = "30px";
+      icon.style.fontSize = "10px";
     });
 
     // var rightButtons = document.getElementById('right-buttons');
@@ -15,7 +15,7 @@ window.onscroll = function() {
     document.getElementById('right-buttons').setAttribute('id', 'sticky-right-buttons')
   } else {
     icons.forEach(icon => {
-      icon.style.fontSize = "50px";
+      icon.style.fontSize = "30px";
     });
     // rightButtons.style.position = "absolute";
     // rightButtons.style.top = '175px';
