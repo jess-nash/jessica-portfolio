@@ -72,6 +72,7 @@ header {
 .container {
   margin: 0 auto;
   width: 75%;
+  padding: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -125,12 +126,13 @@ a {
   p {
     margin: 0;
     padding: 0 15px;
+    color: $ash-purple;
   }
 
   .line {
     height: 1px;
     width: 750px;
-    background: black;
+    background: $ash-purple;
   }
 }
 

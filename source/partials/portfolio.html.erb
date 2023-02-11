@@ -2,7 +2,41 @@
   <div class="line"></div>
   <p> Portfolio</p>
 </div>
-<div class="projects">
-  <%= partial 'partials/project-pluto' %>
-  <%= partial 'partials/project-lendstruments' %>
+
+<div class="container portfolio-container">
+  <article class="portfolio-item">
+    <div class="portfolio-item-img">
+      <img src="../images/pluto-collage.png" alt="pluto app screenshot" id="pluto-img">
+    </div>
+    <div class="portfolio-title-container">
+      <h3>Pluto</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Pluto is a mobile first web app where you can log your pets medical information, make daily journal entries as well as add pet sitters to your family to help them understand your pets needs. Pluto used a LINE API in order to get timely notifications.</div>
+          <div class="swiper-slide">As lead developer, my roles included managing the GitHub repository, implementing backend features and gems such as Devise and Pundit, and deployment on Heroku.</div>
+          <div class="swiper-slide">This app was created in 3 weeks in a team of 4 as a capstone project.</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="portfolio-item">
+    <div class="portfolio-item-img">
+      <img src="../images/lendstruments-collage.png" alt="pluto app screenshot" id="pluto-img">
+    </div>
+    <div class="portfolio-title-container">
+      <h3>Lendstruments</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Lendstruments is a marketplace app for renting instruments. Renters can search for their desired instruments and view the item's pickup location on a map. Or as an owner of an instrument, you can manage all your bookings in one place.</div>
+          <div class="swiper-slide">Some of my roles in this project included implementing backend logic and tracking the progress of each feature in order to deploy in a timely manner.</div>
+          <div class="swiper-slide">The Mapbox API was used to retrieve the flat's address.</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </article>
+
 </div>
+<p style="font-size: 10px; text-align: center; padding-top: 50px;"><em>More projects coming soon...</em></p>
