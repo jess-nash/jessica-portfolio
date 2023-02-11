@@ -1,8 +1,11 @@
 .button-social {
   position: relative;
+  padding: 10px;
+  // transition: 1ms;
 
   &:hover {
-    opacity: 0.7;
+    color: #6f6275;
+    transition: 1ms;
   }
 }
 /** RIGHT SIDE SOCIAL BUTTONS **/
@@ -28,11 +31,15 @@
   // right: 10px;
   // right: 60rem;
   transition: 400ms;
+
+  .button-social {
+    padding: 0;
+  }
 }
 
 .button-social-icon {
   font-size: 30px;
-  padding: 10px;
+  // padding: 10px;
   transition: 400ms;
 }
 
@@ -59,6 +66,8 @@
 
 .white-button:hover {
   transform: translateY(3px);
+  color: $ash-purple;
+  border: 1px solid $ash-purple;
 }
 
 .pluto-buttons, .lendstruments-buttons {
@@ -74,8 +83,4 @@
     // top: 183px;
     // right: -4px;
   }
-
-  // .button-social-icon {
-  //   font-size: 20px;
-  // }
 }

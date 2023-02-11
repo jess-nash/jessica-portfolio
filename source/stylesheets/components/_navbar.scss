@@ -4,38 +4,41 @@ nav {
   z-index: 1;
 }
 
-  .navbar {
-    background: $light-purple;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 0.7rem 1.7rem;
-  }
+.navbar {
+  background: $light-purple;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0.7rem 1.7rem;
+}
 
-  .nav-menu {
-    margin: 0 auto;
-  }
-  .nav-link {
-    color: black;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-  }
+.nav-menu {
+  margin: 0 auto;
+}
 
-  a:hover {
-    color: #6f6275;
-  }
+.nav-link {
+  color: black;
+  // margin-bottom: 0;
+  font-size: 1rem;
+}
 
-  .music {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-  }
+.nav-link:hover {
+  color: $ash-purple;
+}
 
-  .navbar-mobile {
-    display: none;
-  }
+.music {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+
 
 @media only screen and (max-width: 600px) {
   .navbar-mobile {
