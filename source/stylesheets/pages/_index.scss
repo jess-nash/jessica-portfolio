@@ -1,32 +1,141 @@
-body {
-  font-family: 'Roboto Slab', serif;
+* {
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: all .4s ease;
 }
+
+html, body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: $body-font;
+  line-height: 1.7;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h2,
+h3,
+p {
+  margin-bottom: 1em;
+}
+
+h5 {
+  font-size: 1.17em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+header,
+section {
+  padding: 4rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 2rem 0;
+  }
+}
+
+header {
+  font: $headers-font;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 7rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 90vh;
+    padding-top: 3rem;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 75%;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+      width: 90%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+
+  a:hover {
+    color: $ash-purple;
+  }
+
+  a:active {
+    color: $pluto-pink;
+  }
 }
 
-a:hover {
-  color: black;
+
+
+
+// MISC
+.alert {
+  top: 50px;
+  right: 345px;
+  height: fit-content;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px){
+  .alert {
+    display: none;
+  }
 }
 
 .divider {
-  margin-bottom: 30px;
+  margin-bottom: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   p {
-    font-size: 20px;
     margin: 0;
     padding: 0 15px;
   }
 
   .line {
     height: 1px;
-    width: 200px;
     width: 750px;
     background: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .divider p {
+    font-size: .6em;
   }
 }

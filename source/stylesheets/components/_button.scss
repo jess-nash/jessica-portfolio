@@ -15,9 +15,6 @@
   align-items: center;
   position: absolute;
   padding: 10px;
-  // top: 420px;
-  // right: 350px;
-  // right: 60rem;
   transition: 400ms;
 }
 
@@ -27,9 +24,6 @@
   align-items: center;
   position: fixed;
   padding: 10px;
-  // top: 80px;
-  // right: 10px;
-  // right: 60rem;
   transition: 400ms;
 
   .button-social {
@@ -37,9 +31,13 @@
   }
 }
 
-.button-social-icon {
+.mobile-buttons {
+  display: none;
+}
+
+.button-social-icon,
+.mobile-button-social-icon {
   font-size: 30px;
-  // padding: 10px;
   transition: 400ms;
 }
 
@@ -79,8 +77,18 @@
   #right-buttons,
   #sticky-right-buttons {
     display: none;
-    // position: absolute;
-    // top: 183px;
-    // right: -4px;
+  }
+
+  #mobile-social-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 400ms;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #mobile-social-buttons {
+    display: none;
   }
 }

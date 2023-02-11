@@ -1,33 +1,37 @@
 ---
 title: "index"
 ---
-<!-- NavBar Section -->
-<%#= partial 'partials/navbar' %>
 
-<div class="container ">
-  <div class="alert alert-info" role="alert">
-    <h4 class="alert-heading">Sorry!</h4>
-    <p>This site on mobile devices is currently under construction.</p>
-    <hr>
-    <p class="mb-0">Try visiting me on a desktop! Or come back again soon.</p>
-    <p class="mb-0">Sorry for the inconvenience.</p>
-  </div>
+<!-- MAIN SECTION-->
+<main class="container">
+  <!-- Home Section -->
+  <header id="home">
+    <%= partial 'partials/home' %>
+  </header>
 
-  <!-- Social buttons Section -->
-  <%= partial 'partials/social-buttons' %>
-
-  <!-- About Section -->
-  <%= partial 'partials/about' %>
-
-  <!-- Works Section -->
-  <%= partial 'partials/works' %>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <%#= partial 'partials/portfolio' %>
+  </section>
 
   <!-- Technologies Section -->
-  <%= partial 'partials/technologies' %>
+  <section id="tech">
+    <%#= partial 'partials/technologies' %>
+    <%= partial 'partials/tech' %>
+  </section>
 
   <!-- Resume Section -->
-  <%= partial 'partials/resume' %>
+  <section id="resume">
+    <%= partial 'partials/resume' %>
+  </section>
+
+  <!-- Contact Section-->
+  <section id="contact">
+    <%= partial 'partials/contact' %>
+  </section>
 
   <!-- Footer Section -->
-  <%= partial 'partials/footer' %>
-</div>
+  <footer>
+    <%= partial 'partials/footer' %>
+  </footer>
+</main>
