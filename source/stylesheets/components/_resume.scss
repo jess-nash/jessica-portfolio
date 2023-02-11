@@ -1,5 +1,7 @@
-#resume {
-  font-size: 20px;
+.resume-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   .white-button {
     padding: 10px 15px;
@@ -7,5 +9,11 @@
 
   .resume-icon {
     padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resume-container {
+    font-size: 11px;
   }
 }
