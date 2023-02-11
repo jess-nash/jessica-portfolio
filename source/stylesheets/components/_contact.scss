@@ -1,0 +1,45 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: $light-purple;
+  border-radius: 5px;
+  padding: 15px;
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .email-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .contact-intro {
+    font-weight: bold;
+    color: $ash-purple;
+  }
+
+  a:hover {
+    color: $ash-purple;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-container p {
+    font-size: 0.7em;
+  }
+
+  .contact-container .email-link {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact-container {
+    padding: 30px;
+    max-width: 50%;
+  }
+}
