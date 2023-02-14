@@ -1,19 +1,16 @@
 .portfolio-container {
   display: grid;
-  gap: 2.5rem;
+  gap: 3rem;
   grid-template-columns: repeat(2,1fr);
-
-  // display: flex;
-  // justify-content: center;
+  justify-content: center;
 }
 
 .portfolio-item {
   border: 1px solid transparent;
   border-radius: 5px;
-  padding: 1.2rem;
+  padding: 1.5rem;
   background-color: $light-purple;
   transition: all .4s ease;
-  // max-width: 25em;
 
   h3 {
     margin-top: 1em;
@@ -33,14 +30,43 @@
   overflow: hidden;
 }
 
-.portfolio-title-container {
+.portfolio-info-container {
   display: flex;
   flex-direction: column;
 }
 
+.portfolio-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    transition: all 0ms;
+  }
+
+  a:active {
+    color: $light-purple;
+  }
+
+  .portfolio-icons-container {
+    display: flex;
+  }
+
+  .portfolio-icon {
+    padding: 5px;
+  }
+}
+
+
+
 .swiper {
   font-size: .8rem;
-  // margin-left: 1rem;
   padding-bottom: 2.5rem;
   max-width: 20.5rem;
   z-index: 0;
@@ -51,9 +77,9 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .portfolio-container {
-    gap: 1rem;
+    // gap: 1rem;
     grid-template-columns: 1fr;
   }
 
@@ -61,9 +87,9 @@
     font-size: .8em;
   }
 
-  .portfolio-item {
-    padding: 1em;
-  }
+  // .portfolio-item {
+  //   padding: 1em;
+  // }
 
   .swiper {
     max-width: 25em;
@@ -75,191 +101,3 @@
     max-width: 18em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #pluto-img {
-//   max-width: 100%;
-// }
-
-// #lendstruments-img {
-//   max-width: 100%;
-// }
-
-// .pluto-left {
-//   margin-left: 60px;
-// }
-
-// .pluto-right {
-//   max-width: 60%;
-//   margin-left: 20px;
-// }
-
-//   .project-title {
-//     font-size: 50px;
-//   }
-
-//   .project-subtitle {
-//     font-size: 20px;
-//     letter-spacing: 0.08em;
-//     font-style: italic;
-//   }
-
-//   .project-role {
-//     margin-left: 30px;
-//     padding: 20px 0 10px 0;
-//   }
-
-//   .project-description {
-//     margin-left: 30px;
-//     list-style: "> ";
-//     font-size: 18px;
-//       li {
-//         margin-bottom: 10px;
-//       }
-//   }
-
-
-//   .tools-used {
-//     margin-left: 30px;
-
-//     .project-tool-icon {
-//       font-size: 40px;
-//       color: black;
-//       padding: 5px;
-//     }
-
-//     .project-tool-img {
-//       max-width: 45px;
-//     }
-
-//     #ruby-img {
-//       padding: 5px;
-//     }
-
-//     #rails-img {
-//       padding: 4px 2px 2px 2px;
-//     }
-
-//     #line-img {
-//       padding: 4px
-//     }
-//   }
-
-//   .lines {
-//     display: flex;
-
-//     .line-1 {
-//       margin-right: 10px;
-//       height: 1px;
-//       max-width: 150px;
-//       background: black;
-//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     }
-
-//     .line-2 {
-//       margin-right: 10px;
-//       height: 1px;
-//       max-width: 75px;
-//       background: black;
-//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     }
-
-//     .line-3 {
-//       height: 1px;
-//       max-width: 25px;
-//       background: black;
-//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     }
-//   }
-
-// .lendstruments-buttons {
-//   /* styling of the tooltip display */
-//   p.tooltip-text {
-//     background: $lendstruments-green;
-//     bottom: -65px;
-//     left: 5px;
-//   }
-
-//   /* optional styling to add a "wedge" to the tooltip */
-//   p.tooltip-text:before {
-//       border: 15px solid $lendstruments-green;
-//       border-left: 4px solid transparent;
-//       border-right: 4px solid transparent;
-//       border-top: 8px solid transparent;
-//       border-bottom: 11px solid $lendstruments-green;
-//   }
-// }
-
-// .pluto-buttons {
-//   /* styling of the tooltip display */
-//   p.tooltip-text {
-//     background: $pluto-pink;
-//     bottom: -65px;
-//     left: 45px;
-//   }
-
-//   /* optional styling to add a "wedge" to the tooltip */
-//   p.tooltip-text:before {
-//       border: 15px solid $pluto-pink;
-//       border-left: 4px solid transparent;
-//       border-right: 4px solid transparent;
-//       border-top: 8px solid transparent;
-//       border-bottom: 11px solid $pluto-pink;
-//   }
-
-//   p.mobile-tooltip-text{
-//     background: $pluto-pink;
-//     bottom: -65px;
-//     left: 4px;
-//   }
-
-//   p.mobile-tooltip-text:before {
-//     border: 15px solid $pluto-pink;
-//     border-left: 4px solid transparent;
-//     border-right: 4px solid transparent;
-//     border-top: 8px solid transparent;
-//     border-bottom: 11px solid $pluto-pink;
-// }
-// }
-
-// p.tooltip-text, p.mobile-tooltip-text {
-//   color: white;
-//   padding: 10px;
-//   position: absolute;
-//   transform-origin: 50% -10%;
-//   transform: scale(0);
-//   opacity: 0;
-//   transition: all 300ms;
-//   border-radius: 50px;
-// }
-
-// p.tooltip-text:before, p.mobile-tooltip-text:before {
-//   content: '';
-//   position: absolute;
-//   display: block;
-//   bottom: 37.5px;
-//   left: 44px;
-// }
-
-// .button-container:hover p {
-//   transform: scale(1);
-//   opacity:1;
-// }
-
-// .button-container {
-//   display: flex;
-//   position: relative;
-// }
